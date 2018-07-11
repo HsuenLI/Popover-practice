@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         
     }
     
+    //After viewDidLoad present a pop up view
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         if let popoverViewController = storyboard?.instantiateViewController(withIdentifier: "popover") as? PopoverViewController{
